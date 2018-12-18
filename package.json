@@ -1,0 +1,29 @@
+{
+  "name": "survey",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
+    "eslint": "^5.10.0",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "simpl-schema": "^1.5.3",
+    "uniforms": "^1.29.0",
+    "uniforms-bootstrap4": "^1.29.0",
+    "uniforms-semantic": "^1.29.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
