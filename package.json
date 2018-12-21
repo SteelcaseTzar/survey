@@ -11,10 +11,11 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/runtime": "^7.1.5",
     "eslint": "^5.10.0",
+    "hammerjs": "^2.0.8",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "simpl-schema": "^1.5.3",
+    "simpl-schema": "^1.4.2",
     "uniforms": "^1.29.0",
     "uniforms-bootstrap4": "^1.29.0",
     "uniforms-semantic": "^1.29.0"

@@ -3,19 +3,19 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import SimpleSchema from 'simpl-schema';
 import {AutoForm} from 'uniforms-semantic'
+import {Tasks} from './../imports/api/tasks'
+import SimpleSchema2Bridge    from 'uniforms/SimpleSchema2Bridge';
 
-const PostForm = ({model}) => {
-  return (
-    <AutoForm schema={SurveySchema} onSubmit={doc => db.save(doc)} model={model} />
-  )
-};
+
 export default class UniformsHello extends Component {
   render() {
 
     return (
+      <template name='uniforms'>
       <div>
-      <PostForm/>
+      {{> quickForm collection="Tasks" id="insertTaskForm" tye="insert" class="new-task-form"}}
        </div>
+       </template>
     )
   }
 }
